@@ -1,0 +1,208 @@
+@import 'mixins'
+
+main
+    .tickets_info
+        display: flex
+        margin: 5em 15em
+        justify-content: center
+        align-items: center
+        .tickets_txt
+            display: flex
+            flex-direction: column
+
+            .titulo_tickets
+                display: flex
+                justify-content: left
+                align-items: center
+                
+                .titulo
+                    position: relative
+                    
+                    h1
+                        background-color: $blanco
+                    .titulo_giro
+                        position: absolute
+                        width: 35%
+                        top: -20px
+                        left: 218px
+                        mix-blend-mode: multiply
+                        animation: rotation 7s infinite linear
+
+            .tickets_text
+                padding: 2em 0
+                
+        .tickets_imgInfo
+            width: 20vw
+            margin: 0 0 0 7em
+
+    @include entradilla_tickets
+
+    .tickets_abonos
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 0 7em
+        .tickets_abono
+            position: relative
+            display: flex
+            flex-direction: column
+            justify-content: center
+            margin: 2em
+            width: auto
+            align-content: center
+            border: 3.5px solid $negro
+            border-radius: 35px 
+            .abono_titulo
+                display: flex
+                justify-content: center
+                align-items: center
+                white-space: nowrap
+                padding: 1em 3em 0 3em
+                font-size: 28px
+                font-weight: 700 
+            .abono_barra
+                border-top: 3px solid $negro
+                margin: 1em 0
+                width: 100%
+            .abono_txt
+                margin: 2em
+        
+            @include boton_tickets1
+            @include boton_tickets2
+            @include boton_tickets3          
+    
+    .tickets_especific
+        @include txt_especific
+        display: flex
+        justify-content: center
+        padding: 1em 0 4em 0
+        margin: 0 2em
+
+    .form_cabecera
+        display: flex
+        justify-content: center
+        font-family: 'Poppins', sans-serif
+        font-style: normal
+        color: $negro
+        font-size: 48px
+        font-weight: 700
+        letter-spacing: 0
+
+    .tickets_formulario
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        margin: 4em 0
+
+        .tickets_form
+            align-items: center
+            width: 50vw
+            height: auto
+            padding: 1.5em
+            background-color: $negro
+            border: 5px solid $negro
+            border-radius: 37px
+            
+            .form_caja
+                padding: 1.5em 2em
+                background-color: $blanco
+                border-radius: 37px
+                .form_line
+                    display: flex
+                    align-items: baseline
+                    
+                    .form_txt
+                        @include txt_dest
+                        white-space: nowrap
+                    .form_txt2
+                        @include txt_especific
+                        white-space: nowrap
+                    
+                    #nombre
+                        @include caja_formulario
+                    #nombre:focus
+                        outline: 0 none
+                    #e-mail
+                        @include caja_formulario
+                    #e-mail:focus
+                        outline: 0 none
+                    #compra
+                        @include caja_formulario
+                    #compra:focus
+                        outline: 0 none
+                
+                .form_btn
+                    display: flex
+                    justify-content: right
+                    button
+                        display: flex
+                        margin: 1em 0 0 0
+                        background-color: $rosa
+                        flex-direction: row
+                        justify-content: center
+                        align-items: center
+                        width: 1.5em
+                        height: 1.5em
+                        border: 3px solid $negro
+                        border-radius: 100%
+                        .material-icons
+                            border-radius: 100%
+                            color: $negro
+                        .material-icons:hover
+                            background-color: $negro
+                            color: $blanco
+                    button:hover
+                        background-color: $negro
+                        color: $blanco
+
+    @include boton_goUp4
+
+
+
+// TABLET (900px) Y MOVIL(600px) DEVICES 
+
+main
+    @media screen and (max-width: 1250px)
+        .tickets_abonos
+            flex-direction: column
+
+    @media screen and (max-width: 900px)
+        .tickets_info
+            margin: 5em 5em
+            .tickets_imgInfo
+                display: none
+        
+        .tickets_formulario
+            .tickets_imgInfo
+                display: none
+            .tickets_form
+                width: 80vw
+                .form_caja
+                    .form_btn
+                        .material-icons:hover
+                            background-color: $rosa
+                            color: $negro
+                        
+        .btn_up4
+            display: flex
+            justify-content: center
+            .material-icons
+                pointer-events: none
+                
+
+main
+    @media screen and (max-width: 600px)
+        .tickets_formulario
+            .tickets_form
+                align-items: center
+                width: 80vw
+                height: auto
+                padding: 1.5em
+                .form_caja
+                    .form_line
+                        flex-direction: column
+        .form_cabecera
+            font-size: 38px
+                        
+                    

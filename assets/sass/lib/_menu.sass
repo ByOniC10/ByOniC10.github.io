@@ -1,0 +1,146 @@
+@import 'mixins'
+
+.menu 
+    background-color: $rosa
+    @include menu
+
+    // TABLET (900px) Y MOVIL(600px) DEVICES
+
+    @media screen and (max-width: 600px)
+        padding: .5em 2em 0 2em
+
+        .label_menu
+            display: block
+            font-size: 1.3em
+
+        ul
+            opacity: 0
+            transition: all .5s ease
+            position: absolute
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            height: 220px
+            top: 4.7em
+            right: -150px
+            background-color: $blanco
+            border-radius: 0px 0px 35px 35px
+            border: 3.5px solid $negro
+            .menuitem
+                padding: 1em 3em
+                a
+                    color: $negro
+
+        #btn_menu:checked ~ ul
+            opacity: 1
+            right: 25px
+            top: 4.7em
+            
+
+.menu2
+    background-color: $azul
+    @include menu
+
+    // TABLET (900px) Y MOVIL(600px) DEVICES
+
+    @media screen and (max-width: 600px)
+        padding: .5em 2em 0 2em
+
+        .label_menu
+            display: block
+            font-size: 1.3em
+
+        ul
+            opacity: 0
+            transition: all .5s ease
+            position: absolute
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            height: 220px
+            top: 4.7em
+            right: -150px
+            background-color: $blanco
+            border-radius: 0px 0px 35px 35px
+            border: 3.5px solid $negro
+            .menuitem
+                padding: 1em 3em
+                a
+                    color: $negro
+
+        #btn_menu:checked ~ ul
+            opacity: 1
+            right: 25px
+            top: 4.7em
+
+.menu3
+    background-color: $verde
+    @include menu
+
+    // TABLET (900px) Y MOVIL(600px) DEVICES
+
+    @media screen and (max-width: 600px)
+        padding: .5em 2em 0 2em
+
+        .label_menu
+            display: block
+            font-size: 1.3em
+
+        ul
+            opacity: 0
+            transition: all .5s ease
+            position: absolute
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            height: 220px
+            top: 4.7em
+            right: -150px
+            background-color: $blanco
+            border-radius: 0px 0px 35px 35px
+            border: 3.5px solid $negro
+            .menuitem
+                padding: 1em 3em
+                a
+                    color: $negro
+
+        #btn_menu:checked ~ ul
+            opacity: 1
+            right: 25px
+            top: 4.7em
+
+.menu4
+    background-color: $naranja
+    @include menu
+
+    // TABLET (900px) Y MOVIL(600px) DEVICES  
+
+    @media screen and (max-width: 600px)
+        padding: .5em 2em 0 2em
+
+        .label_menu
+            display: block
+            font-size: 1.3em
+
+        ul
+            opacity: 0
+            transition: all .5s ease
+            position: absolute
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            height: 220px
+            top: 4.7em
+            right: -150px
+            background-color: $blanco
+            border-radius: 0px 0px 35px 35px
+            border: 3.5px solid $negro
+            .menuitem
+                padding: 1em 3em
+                a
+                    color: $negro
+
+        #btn_menu:checked ~ ul
+            opacity: 1
+            right: 25px
+            top: 4.7em

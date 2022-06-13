@@ -1,0 +1,58 @@
+@import 'mixins'
+
+// PRINT ACTIVIDADES
+
+@media print
+    @page
+        margin: 2cm
+        size: auto
+        page-break-inside: avoid
+        
+                       
+    header, footer, .titulo_giro, .barra_maps, .acti_ilust, .acti_ilust2, .acti_ilust3, .acti_ilust4, .acti_ilust5, 
+        display: none
+
+    main
+        -webkit-print-color-adjust: exact
+        #titulo_activ
+            display: flex
+            flex-direction: column
+            width: 100%
+            justify-content: center
+            align-items: center
+            padding: 0
+                
+        
+        .acti_imagenes
+            .acti_leyenda, .acti_leyenda2
+                margin: 0
+            .acti_leyenda
+                display: block
+            .acti_leyenda2
+                display: none
+            .acti_leyenda3
+                display: none
+        .acti_imagenes:hover
+            .acti_leyenda
+                display: block
+            .acti_leyenda2
+                display: none
+
+        .tickets_especific
+            font-size: 10px
+            padding: 1cm 0
+
+        .acti_actividades
+            margin: 0 auto 1.5cm auto
+            width: 100%
+            display: inline-block
+                        
+        .acti_actividades2
+            margin: 0 auto 1.5cm auto
+            width: 100%
+            display: inline-block
+
+        .btn_up, .btn_up2, .btn_up3, .btn_up4,
+            display: none
+
+

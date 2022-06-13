@@ -1,0 +1,104 @@
+@import 'mixins'
+
+main
+    .intro
+        display: flex
+        justify-content: center
+        justify-self: center
+        align-items: center
+        padding: 3em 10em 0 10em
+        .intro_info
+            position: relative
+            .intro_title
+                position: absolute
+            .intro_subtitle
+                @include txt_subtitle
+                padding: 25vh 0 1em 0
+                white-space: nowrap
+            .intro_txt
+                @include txt_base
+                width: 90%
+                padding: 0 0 3em 0
+
+            @include boton_principal
+
+    @include entradilla_principal
+
+    #cartelera
+        .cartelera
+            background-image: url(https://i.ibb.co/HzQyFPh/Cartelera-2.png)
+            height: 150vh
+            width: 100%
+            padding: 10em
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: center
+
+        .cartelera_txt
+            @include txt_especific
+            display: flex
+            justify-content: center
+            justify-self: center
+            padding: 2em 0
+            a
+                color: $darkgray
+                font-weight: 700
+            a:hover
+                color: $verde
+    
+    @include boton_goUp
+
+
+
+// TABLET (900px) Y MOVIL(600px) DEVICES
+
+main
+    @media screen and (max-width: 900px)
+        .intro
+            padding: 0 3em
+            .intro_info
+                .intro_txt
+                    width: 100%
+    @media screen and (max-width: 1300px)
+        .intro   
+            .intro_img
+                display: none
+
+        #cartelera
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin: 1em
+            white-space: nowrap
+            .cartelera
+                height: 100vh
+            .cartelera_txt
+                a
+                    color: $verde
+        .intro_btn
+            pointer-events: none
+        .btn_up
+            .material-icons
+                pointer-events: none
+
+                
+
+main
+    @media screen and (max-width: 600px)
+        #cartelera
+            .cartelera
+                height: 100vh
+            .cartelera_txt
+                font-size: 11px
+                display: flex
+                flex-direction: column
+                align-items: center
+                margin: 0 3em
+                a
+                    color: $verde
+
+        .barra_lateral
+            .barra_txt
+                font-size: 14px
+

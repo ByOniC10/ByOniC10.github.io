@@ -1,0 +1,525 @@
+// TEXTO
+
+@mixin txt_base
+    font-family: 'Poppins', sans-serif
+    color: $negro
+    font-size: 14px
+    font-weight: 400
+    letter-spacing: 0
+
+@mixin txt_dest
+    font-family: 'Poppins', sans-serif
+    color: $negro
+    font-size: 14px
+    font-weight: 700
+    letter-spacing: 0 
+
+@mixin txt_especific
+    font-family: 'Poppins', sans-serif
+    font-style: italic
+    color: $darkgray
+    font-size: 12px
+    font-weight: 400
+
+@mixin txt_especific2
+    font-family: 'Poppins', sans-serif
+    font-style: italic
+    color: $negro
+    font-size: 12px
+    font-weight: 400
+
+@mixin txt_subtitle
+    font-family: 'Poppins', sans-serif
+    font-style: italic
+    color: $negro
+    font-size: 28px
+    font-weight: 600
+
+@mixin txt_btn
+    font-family: 'Poppins', sans-serif
+    color: $negro
+    font-size: 18px
+    font-weight: 500
+
+@mixin txt_entradilla
+    font-family: 'Poppins', sans-serif
+    color: $negro
+    font-size: 18px
+    font-weight: 500
+    font-style: italic
+
+
+   
+// MENU
+
+@mixin menu
+    color: $blanco 
+    font-family: sans-serif 
+    position: relative 
+    display: flex
+    border-radius: 0px 0px 35px 35px
+    border: 3.5px solid $negro
+    justify-content: space-between
+    padding: .5em 4em 0 4em
+    z-index: 11
+
+    .brand
+        padding: 1em
+
+    .mdi-menu
+        padding: 1em
+
+    .label_menu, #btn_menu
+        display: none
+
+    ul 
+        display: flex
+        transition: all .5s ease
+        .menuitem 
+            list-style: none 
+            padding: 1em 
+        a  
+            color: $blanco
+            font-family: poppins
+            font-weight: 900
+            letter-spacing: .5px
+            &:hover 
+                color: $negro
+        
+
+// PADDINGS
+
+@mixin padd_footer
+    padding: 0 2em
+
+
+
+// BOTONES INDEX
+
+@mixin boton_principal
+    .intro_btn
+        @include txt_btn
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        padding: .3em 1em
+        background-color: $amarillo
+        width: 10em
+        border: 3px solid $negro
+        border-radius: 37px
+        color: $negro
+ 
+        .intro_btnTxt
+            padding: 0 .5em 0 0
+                
+        
+    .intro_btn:hover
+        @include txt_btn
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        padding: .3em 1em
+        background-color: $negro
+        width: 10em
+        border: 3px solid $negro
+        border-radius: 37px
+        color: $blanco
+ 
+        .intro_btnTxt
+            padding: 0 .5em 0 0
+
+
+// BOTONES TICKETS
+
+@mixin boton_tickets1
+    .tickets_btn1
+        @include txt_btn
+        margin: .5em auto 2em auto
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        padding: .3em 1em
+        background-color: $naranja
+        width: 10em
+        border: 3px solid $negro
+        border-radius: 37px
+        color: $negro
+ 
+        .intro_btnTxt
+            padding: 0 .5em 0 0    
+        
+    .tickets_btn1:hover
+        @include txt_btn
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        padding: .3em 1em
+        background-color: $negro
+        width: 10em
+        border: 3px solid $negro
+        border-radius: 37px
+        color: $blanco
+ 
+        .intro_btnTxt
+            padding: 0 .5em 0 0
+
+    // TABLET (900px) Y MOVIL(600px) DEVICES
+
+    @media screen and (max-width: 900px)
+        .tickets_btn1:hover
+            width: 10em
+            background-color: $naranja
+            color: $negro
+
+    @media screen and (max-width: 600px)
+        .tickets_btn1
+            position: absolute
+            top: 34vh  
+            left: 17em
+            width: auto
+        .tickets_btn1:hover
+            width: auto
+        .intro_btnTxt
+            display: none
+            .material-icons
+                padding: auto
+                width: auto
+
+@mixin boton_tickets2
+    .tickets_btn2
+        @include txt_btn
+        margin: .5em auto 2em auto
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        padding: .3em 1em
+        background-color: $rosa
+        width: 10em
+        border: 3px solid $negro
+        border-radius: 37px
+        color: $negro
+ 
+        .intro_btnTxt
+            padding: 0 .5em 0 0
+                
+        
+    .tickets_btn2:hover
+        @include txt_btn
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        padding: .3em 1em
+        background-color: $negro
+        width: 10em
+        border: 3px solid $negro
+        border-radius: 37px
+        color: $blanco
+ 
+        .intro_btnTxt
+            padding: 0 .5em 0 0
+
+    // TABLET (900px) Y MOVIL(600px) DEVICES
+
+    @media screen and (max-width: 900px)
+        .tickets_btn2:hover
+            width: 10em
+            background-color: $rosa
+            color: $negro
+    
+    @media screen and (max-width: 600px)
+        .tickets_btn2
+            position: absolute
+            top: 34vh  
+            left: 17em
+            width: auto
+        .tickets_btn2:hover
+            width: auto
+        .intro_btnTxt
+            display: none
+            .material-icons
+                padding: auto
+                width: auto
+        
+
+@mixin boton_tickets3
+    .tickets_btn3
+        @include txt_btn
+        margin: .5em auto 2em auto
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        padding: .3em 1em
+        background-color: $amarillo
+        width: 10em
+        border: 3px solid $negro
+        border-radius: 37px
+        color: $negro
+ 
+        .intro_btnTxt
+            padding: 0 .5em 0 0
+                
+        
+    .tickets_btn3:hover
+        @include txt_btn
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        padding: .3em 1em
+        background-color: $negro
+        width: 10em
+        border: 3px solid $negro
+        border-radius: 37px
+        color: $blanco
+ 
+        .intro_btnTxt
+            padding: 0 .5em 0 0
+
+    // TABLET (900px) Y MOVIL(600px) DEVICES
+
+    @media screen and (max-width: 900px)
+        .tickets_btn3:hover
+            width: 10em
+            background-color: $amarillo
+            color: $negro
+            
+                
+    @media screen and (max-width: 600px)
+        .tickets_btn3
+            position: absolute
+            top: 34vh  
+            left: 17em
+            width: auto
+        .tickets_btn3:hover
+            width: auto
+        .intro_btnTxt
+            display: none
+            .material-icons
+                padding: auto
+                width: auto
+                
+
+
+// BARRAS LATERALES
+
+@mixin entradilla_principal
+    .barra_lateral
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: center
+        justify-self: center
+        align-items: center
+        margin: 5em 0
+        .barra_txt
+            @include txt_entradilla
+            white-space: nowrap
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            padding: .7em 4em
+            background-color: $blanco
+            width: auto
+            border: 3.5px solid $negro
+            border-radius: 37px
+            color: $negro
+            z-index: 10
+            
+        .barra_line
+            position: absolute
+            border-top: 3.5px solid $negro
+            width: 100%
+
+@mixin entradilla_tickets
+    .barra_lateral2
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: center
+        justify-self: center
+        align-items: center
+        margin: 5em 0
+        .barra_txt
+            position: absolute
+            @include txt_entradilla
+            white-space: nowrap
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            padding: .7em 4em
+            background-color: $blanco
+            width: auto
+            border: 3.5px solid $negro
+            border-radius: 37px
+            color: $negro
+            z-index: 12
+            left: 12em
+        
+        .barra_line
+            position: absolute
+            border-top: 3.5px solid $negro
+            width: 100%
+    
+    // TABLET (900px) Y MOVIL(600px) DEVICES
+    
+    @media screen and (max-width: 900px)
+        .barra_lateral2
+            .barra_txt
+                left: 3em
+
+
+            
+
+// BOTONES VOLVER ARRIBA
+
+@mixin boton_goUp
+    .btn_up
+        display: flex
+        justify-content: right
+        padding: 0 2em
+        .material-icons
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            padding: .7em
+            background-color: $rosa
+            width: 1.5em
+            height: 1.5em
+            border: 3px solid $negro
+            border-radius: 100%
+            color: $negro
+        .material-icons:hover
+            background-color: $negro
+            color: $blanco
+
+@mixin boton_goUp2
+    .btn_up2
+        display: flex
+        justify-content: right
+        padding: 0 2em
+        .material-icons
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            padding: .7em
+            background-color: $azul
+            width: 1.5em
+            height: 1.5em
+            border: 3px solid $negro
+            border-radius: 100%
+            color: $negro
+        .material-icons:hover
+            background-color: $negro
+            color: $blanco
+
+@mixin boton_goUp3
+    .btn_up3
+        display: flex
+        justify-content: right
+        padding: 0 2em
+        .material-icons
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            padding: .7em
+            background-color: $verde
+            width: 1.5em
+            height: 1.5em
+            border: 3px solid $negro
+            border-radius: 100%
+            color: $negro
+        .material-icons:hover
+            background-color: $negro
+            color: $blanco
+
+@mixin boton_goUp4
+    .btn_up4
+        display: flex
+        justify-content: right
+        padding: 0 2em
+        .material-icons
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            padding: .7em
+            background-color: $naranja
+            width: 1.5em
+            height: 1.5em
+            border: 3px solid $negro
+            border-radius: 100%
+            color: $negro
+        .material-icons:hover
+            background-color: $negro
+            color: $blanco
+
+
+// FORMULARIO
+
+@mixin caja_formulario
+    width: 100%
+    padding: .5em 1em
+    margin: 1.5em 0 0em 3em
+    width: 100%
+    border: none
+    border-radius: 35px
+    background-color: $rosita
+    @include txt_base
+    color: $negro
+
+    // TABLET (900px) Y MOVIL(600px) DEVICES
+
+    @media screen and (max-width: 600px)
+        margin: .5em 0
+
+
+
+// CIRCULOS LEYENDA ACTIVIDADES
+
+@mixin circulos_actividades
+    .acti_circulos
+        display: flex
+        flex-direction: column         
+        .acti_circulo1, .acti_circulo2, .acti_circulo3, .acti_circulo4, .acti_circulo5
+                width: 20px
+                height: 20px
+                border: 3px solid $negro
+                border-radius: 100%
+                margin: .5em 1em
+        .acti_circulo1
+            background-color: $azul
+        .acti_circulo2
+            background-color: $rosa
+        .acti_circulo3
+            background-color: $amarillo
+        .acti_circulo4
+            background-color: $verde
+        .acti_circulo5
+            background-color: $naranja
+                
+    .acti_barra
+        border-right: 3.5px solid $negro
+        height: 100%
+    .acti_txt
+        padding: 2em
+        width: 80%
+        .acti_title
+            @include txt_subtitle
+            padding: .5em 0
+        .acti_subtitle
+            @include txt_dest
+        .acti_texto
+            @include txt_base
+        

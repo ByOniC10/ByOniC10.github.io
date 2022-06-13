@@ -1,0 +1,2553 @@
+/* COLORES BASE */
+/* COLORES PRINCIPALES */
+/* COLORES SECUNDARIOS */
+/* PADDIGS */
+/* TEXTOS */
+h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 70px;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu {
+  background-color: #ff7bac;
+  color: #ffffff;
+  font-family: sans-serif;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0px 0px 35px 35px;
+  border: 3.5px solid #000000;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .5em 4em 0 4em;
+  z-index: 11;
+}
+
+.menu .brand {
+  padding: 1em;
+}
+
+.menu .mdi-menu {
+  padding: 1em;
+}
+
+.menu .label_menu, .menu #btn_menu {
+  display: none;
+}
+
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.menu ul .menuitem {
+  list-style: none;
+  padding: 1em;
+}
+
+.menu ul a {
+  color: #ffffff;
+  font-family: poppins;
+  font-weight: 900;
+  letter-spacing: .5px;
+}
+
+.menu ul a:hover {
+  color: #000000;
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    padding: .5em 2em 0 2em;
+  }
+  .menu .label_menu {
+    display: block;
+    font-size: 1.3em;
+  }
+  .menu ul {
+    opacity: 0;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 220px;
+    top: 4.7em;
+    right: -150px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 35px 35px;
+    border: 3.5px solid #000000;
+  }
+  .menu ul .menuitem {
+    padding: 1em 3em;
+  }
+  .menu ul .menuitem a {
+    color: #000000;
+  }
+  .menu #btn_menu:checked ~ ul {
+    opacity: 1;
+    right: 25px;
+    top: 4.7em;
+  }
+}
+
+.menu2 {
+  background-color: #29abe2;
+  color: #ffffff;
+  font-family: sans-serif;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0px 0px 35px 35px;
+  border: 3.5px solid #000000;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .5em 4em 0 4em;
+  z-index: 11;
+}
+
+.menu2 .brand {
+  padding: 1em;
+}
+
+.menu2 .mdi-menu {
+  padding: 1em;
+}
+
+.menu2 .label_menu, .menu2 #btn_menu {
+  display: none;
+}
+
+.menu2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.menu2 ul .menuitem {
+  list-style: none;
+  padding: 1em;
+}
+
+.menu2 ul a {
+  color: #ffffff;
+  font-family: poppins;
+  font-weight: 900;
+  letter-spacing: .5px;
+}
+
+.menu2 ul a:hover {
+  color: #000000;
+}
+
+@media screen and (max-width: 600px) {
+  .menu2 {
+    padding: .5em 2em 0 2em;
+  }
+  .menu2 .label_menu {
+    display: block;
+    font-size: 1.3em;
+  }
+  .menu2 ul {
+    opacity: 0;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 220px;
+    top: 4.7em;
+    right: -150px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 35px 35px;
+    border: 3.5px solid #000000;
+  }
+  .menu2 ul .menuitem {
+    padding: 1em 3em;
+  }
+  .menu2 ul .menuitem a {
+    color: #000000;
+  }
+  .menu2 #btn_menu:checked ~ ul {
+    opacity: 1;
+    right: 25px;
+    top: 4.7em;
+  }
+}
+
+.menu3 {
+  background-color: #7ac943;
+  color: #ffffff;
+  font-family: sans-serif;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0px 0px 35px 35px;
+  border: 3.5px solid #000000;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .5em 4em 0 4em;
+  z-index: 11;
+}
+
+.menu3 .brand {
+  padding: 1em;
+}
+
+.menu3 .mdi-menu {
+  padding: 1em;
+}
+
+.menu3 .label_menu, .menu3 #btn_menu {
+  display: none;
+}
+
+.menu3 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.menu3 ul .menuitem {
+  list-style: none;
+  padding: 1em;
+}
+
+.menu3 ul a {
+  color: #ffffff;
+  font-family: poppins;
+  font-weight: 900;
+  letter-spacing: .5px;
+}
+
+.menu3 ul a:hover {
+  color: #000000;
+}
+
+@media screen and (max-width: 600px) {
+  .menu3 {
+    padding: .5em 2em 0 2em;
+  }
+  .menu3 .label_menu {
+    display: block;
+    font-size: 1.3em;
+  }
+  .menu3 ul {
+    opacity: 0;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 220px;
+    top: 4.7em;
+    right: -150px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 35px 35px;
+    border: 3.5px solid #000000;
+  }
+  .menu3 ul .menuitem {
+    padding: 1em 3em;
+  }
+  .menu3 ul .menuitem a {
+    color: #000000;
+  }
+  .menu3 #btn_menu:checked ~ ul {
+    opacity: 1;
+    right: 25px;
+    top: 4.7em;
+  }
+}
+
+.menu4 {
+  background-color: #fbb03b;
+  color: #ffffff;
+  font-family: sans-serif;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0px 0px 35px 35px;
+  border: 3.5px solid #000000;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .5em 4em 0 4em;
+  z-index: 11;
+}
+
+.menu4 .brand {
+  padding: 1em;
+}
+
+.menu4 .mdi-menu {
+  padding: 1em;
+}
+
+.menu4 .label_menu, .menu4 #btn_menu {
+  display: none;
+}
+
+.menu4 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.menu4 ul .menuitem {
+  list-style: none;
+  padding: 1em;
+}
+
+.menu4 ul a {
+  color: #ffffff;
+  font-family: poppins;
+  font-weight: 900;
+  letter-spacing: .5px;
+}
+
+.menu4 ul a:hover {
+  color: #000000;
+}
+
+@media screen and (max-width: 600px) {
+  .menu4 {
+    padding: .5em 2em 0 2em;
+  }
+  .menu4 .label_menu {
+    display: block;
+    font-size: 1.3em;
+  }
+  .menu4 ul {
+    opacity: 0;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 220px;
+    top: 4.7em;
+    right: -150px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 35px 35px;
+    border: 3.5px solid #000000;
+  }
+  .menu4 ul .menuitem {
+    padding: 1em 3em;
+  }
+  .menu4 ul .menuitem a {
+    color: #000000;
+  }
+  .menu4 #btn_menu:checked ~ ul {
+    opacity: 1;
+    right: 25px;
+    top: 4.7em;
+  }
+}
+
+main .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3em 10em 0 10em;
+}
+
+main .intro .intro_info {
+  position: relative;
+}
+
+main .intro .intro_info .intro_title {
+  position: absolute;
+}
+
+main .intro .intro_info .intro_subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  color: #000000;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 25vh 0 1em 0;
+  white-space: nowrap;
+}
+
+main .intro .intro_info .intro_txt {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  width: 90%;
+  padding: 0 0 3em 0;
+}
+
+main .intro .intro_info .intro_btn {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .3em 1em;
+  background-color: #ffec3f;
+  width: 10em;
+  border: 3px solid #000000;
+  border-radius: 37px;
+  color: #000000;
+}
+
+main .intro .intro_info .intro_btn .intro_btnTxt {
+  padding: 0 .5em 0 0;
+}
+
+main .intro .intro_info .intro_btn:hover {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .3em 1em;
+  background-color: #000000;
+  width: 10em;
+  border: 3px solid #000000;
+  border-radius: 37px;
+  color: #ffffff;
+}
+
+main .intro .intro_info .intro_btn:hover .intro_btnTxt {
+  padding: 0 .5em 0 0;
+}
+
+main .barra_lateral {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5em 0;
+}
+
+main .barra_lateral .barra_txt {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .7em 4em;
+  background-color: #ffffff;
+  width: auto;
+  border: 3.5px solid #000000;
+  border-radius: 37px;
+  color: #000000;
+  z-index: 10;
+}
+
+main .barra_lateral .barra_line {
+  position: absolute;
+  border-top: 3.5px solid #000000;
+  width: 100%;
+}
+
+main #cartelera .cartelera {
+  background-image: url(https://i.ibb.co/HzQyFPh/Cartelera-2.png);
+  height: 150vh;
+  width: 100%;
+  padding: 10em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+main #cartelera .cartelera_txt {
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  color: #555555;
+  font-size: 12px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-self: center;
+  padding: 2em 0;
+}
+
+main #cartelera .cartelera_txt a {
+  color: #555555;
+  font-weight: 700;
+}
+
+main #cartelera .cartelera_txt a:hover {
+  color: #7ac943;
+}
+
+main .btn_up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  padding: 0 2em;
+}
+
+main .btn_up .material-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .7em;
+  background-color: #ff7bac;
+  width: 1.5em;
+  height: 1.5em;
+  border: 3px solid #000000;
+  border-radius: 100%;
+  color: #000000;
+}
+
+main .btn_up .material-icons:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 900px) {
+  main .intro {
+    padding: 0 3em;
+  }
+  main .intro .intro_info .intro_txt {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  main .intro .intro_img {
+    display: none;
+  }
+  main #cartelera {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1em;
+    white-space: nowrap;
+  }
+  main #cartelera .cartelera {
+    height: 100vh;
+  }
+  main #cartelera .cartelera_txt a {
+    color: #7ac943;
+  }
+  main .intro_btn {
+    pointer-events: none;
+  }
+  main .btn_up .material-icons {
+    pointer-events: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main #cartelera .cartelera {
+    height: 100vh;
+  }
+  main #cartelera .cartelera_txt {
+    font-size: 11px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 3em;
+  }
+  main #cartelera .cartelera_txt a {
+    color: #7ac943;
+  }
+  main .barra_lateral .barra_txt {
+    font-size: 14px;
+  }
+}
+
+main #titulo_activ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4em 10em 0 10em;
+}
+
+main #titulo_activ .titulo {
+  position: relative;
+}
+
+main #titulo_activ .titulo h1 {
+  background-color: #ffffff;
+}
+
+main #titulo_activ .titulo .titulo_giro {
+  position: absolute;
+  width: 20%;
+  top: -20px;
+  left: 400px;
+  mix-blend-mode: multiply;
+  -webkit-animation: rotation 7s infinite linear;
+          animation: rotation 7s infinite linear;
+}
+
+main .acti_imagenes .acti_leyenda, main .acti_imagenes .acti_leyenda2 {
+  margin: 2em 15em;
+}
+
+main .acti_imagenes .acti_leyenda {
+  display: block;
+}
+
+main .acti_imagenes .acti_leyenda2 {
+  display: none;
+}
+
+main .acti_imagenes .acti_leyenda3 {
+  display: none;
+}
+
+main .acti_imagenes:hover .acti_leyenda {
+  display: none;
+}
+
+main .acti_imagenes:hover .acti_leyenda2 {
+  display: block;
+}
+
+main .acti_actividades {
+  margin: 2em 15em;
+}
+
+main .acti_actividades .acti_conjunto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .acti_actividades .acti_conjunto .acti_actividad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3.5px solid #000000;
+  margin: 0 5em 0 0;
+  border-radius: 0 35px 35px 0;
+}
+
+main .acti_actividades .acti_conjunto .acti_actividad .acti_circulos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .acti_actividades .acti_conjunto .acti_actividad .acti_circulos .acti_circulo1, main .acti_actividades .acti_conjunto .acti_actividad .acti_circulos .acti_circulo2, main .acti_actividades .acti_conjunto .acti_actividad .acti_circulos .acti_circulo3, main .acti_actividades .acti_conjunto .acti_actividad .acti_circulos .acti_circulo4, main .acti_actividades .acti_conjunto .acti_actividad .acti_circulos .acti_circulo5 {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #000000;
+  border-radius: 100%;
+  margin: .5em 1em;
+}
+
+main .acti_actividades .acti_conjunto .acti_actividad .acti_circulos .acti_circulo1 {
+  background-color: #29abe2;
+}
+
+main .acti_actividades .acti_conjunto .acti_actividad .acti_circulos .acti_circulo2 {
+  background-color: #ff7bac;
+}
+
+main .acti_actividades .acti_conjunto .acti_actividad .acti_circulos .acti_circulo3 {
+  background-color: #ffec3f;
+}
+
+main .acti_actividades .acti_conjunto .acti_actividad .acti_circulos .acti_circulo4 {
+  background-color: #7ac943;
+}
+
+main .acti_actividades .acti_conjunto .acti_actividad .acti_circulos .acti_circulo5 {
+  background-color: #fbb03b;
+}
+
+main .acti_actividades .acti_conjunto .acti_actividad .acti_barra {
+  border-right: 3.5px solid #000000;
+  height: 100%;
+}
+
+main .acti_actividades .acti_conjunto .acti_actividad .acti_txt {
+  padding: 2em;
+  width: 80%;
+}
+
+main .acti_actividades .acti_conjunto .acti_actividad .acti_txt .acti_title {
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  color: #000000;
+  font-size: 28px;
+  font-weight: 600;
+  padding: .5em 0;
+}
+
+main .acti_actividades .acti_conjunto .acti_actividad .acti_txt .acti_subtitle {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+main .acti_actividades .acti_conjunto .acti_actividad .acti_txt .acti_texto {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+main .acti_actividades .acti_conjunto .acti_ilust {
+  width: 20vw;
+  padding: 3em 4em;
+  border: 3.5px solid #000000;
+  border-radius: 35px;
+  background-color: #ffec3f;
+}
+
+main .acti_actividades .acti_conjunto .acti_ilust3 {
+  width: 20vw;
+  padding: 3em 4em;
+  border: 3.5px solid #000000;
+  border-radius: 35px;
+  background-color: #7ac943;
+}
+
+main .acti_actividades .acti_conjunto .acti_ilust5 {
+  width: 20vw;
+  padding: 3em 4em;
+  border: 3.5px solid #000000;
+  border-radius: 35px;
+  background-color: #ff7bac;
+}
+
+main .acti_actividades2 {
+  margin: 2em 15em;
+}
+
+main .acti_actividades2 .acti_conjunto2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .acti_actividades2 .acti_conjunto2 .acti_actividad2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3.5px solid #000000;
+  margin: 0 0 0 5em;
+  border-radius: 35px 0 0 35px;
+  z-index: 1;
+}
+
+main .acti_actividades2 .acti_conjunto2 .acti_actividad2 .acti_circulos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .acti_actividades2 .acti_conjunto2 .acti_actividad2 .acti_circulos .acti_circulo1, main .acti_actividades2 .acti_conjunto2 .acti_actividad2 .acti_circulos .acti_circulo2, main .acti_actividades2 .acti_conjunto2 .acti_actividad2 .acti_circulos .acti_circulo3, main .acti_actividades2 .acti_conjunto2 .acti_actividad2 .acti_circulos .acti_circulo4, main .acti_actividades2 .acti_conjunto2 .acti_actividad2 .acti_circulos .acti_circulo5 {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #000000;
+  border-radius: 100%;
+  margin: .5em 1em;
+}
+
+main .acti_actividades2 .acti_conjunto2 .acti_actividad2 .acti_circulos .acti_circulo1 {
+  background-color: #29abe2;
+}
+
+main .acti_actividades2 .acti_conjunto2 .acti_actividad2 .acti_circulos .acti_circulo2 {
+  background-color: #ff7bac;
+}
+
+main .acti_actividades2 .acti_conjunto2 .acti_actividad2 .acti_circulos .acti_circulo3 {
+  background-color: #ffec3f;
+}
+
+main .acti_actividades2 .acti_conjunto2 .acti_actividad2 .acti_circulos .acti_circulo4 {
+  background-color: #7ac943;
+}
+
+main .acti_actividades2 .acti_conjunto2 .acti_actividad2 .acti_circulos .acti_circulo5 {
+  background-color: #fbb03b;
+}
+
+main .acti_actividades2 .acti_conjunto2 .acti_actividad2 .acti_barra {
+  border-right: 3.5px solid #000000;
+  height: 100%;
+}
+
+main .acti_actividades2 .acti_conjunto2 .acti_actividad2 .acti_txt {
+  padding: 2em;
+  width: 80%;
+}
+
+main .acti_actividades2 .acti_conjunto2 .acti_actividad2 .acti_txt .acti_title {
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  color: #000000;
+  font-size: 28px;
+  font-weight: 600;
+  padding: .5em 0;
+}
+
+main .acti_actividades2 .acti_conjunto2 .acti_actividad2 .acti_txt .acti_subtitle {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+main .acti_actividades2 .acti_conjunto2 .acti_actividad2 .acti_txt .acti_texto {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+main .acti_actividades2 .acti_conjunto2 .acti_ilust2 {
+  width: 20vw;
+  padding: 3em 4em;
+  border: 3.5px solid #000000;
+  border-radius: 35px;
+  background-color: #fbb03b;
+}
+
+main .acti_actividades2 .acti_conjunto2 .acti_ilust4 {
+  width: 20vw;
+  height: 40vh;
+  padding: 3em 4em;
+  border: 3.5px solid #000000;
+  border-radius: 35px;
+  background-color: #29abe2;
+}
+
+main .btn_up2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  padding: 0 2em;
+}
+
+main .btn_up2 .material-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .7em;
+  background-color: #29abe2;
+  width: 1.5em;
+  height: 1.5em;
+  border: 3px solid #000000;
+  border-radius: 100%;
+  color: #000000;
+}
+
+main .btn_up2 .material-icons:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1200px) {
+  main .acti_imagenes .acti_leyenda, main .acti_imagenes .acti_leyenda2 {
+    margin: 2em 2em;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  main .acti_imagenes {
+    pointer-events: none;
+  }
+  main .acti_imagenes .acti_leyenda, main .acti_imagenes .acti_leyenda2 {
+    margin: 2em 2em;
+  }
+  main .tickets_especific {
+    margin: 0 3em;
+  }
+  main .acti_actividades {
+    margin: 2em 10em;
+  }
+  main .acti_actividades .acti_conjunto .acti_ilust, main .acti_actividades .acti_conjunto .acti_ilust3, main .acti_actividades .acti_conjunto .acti_ilust5 {
+    display: none;
+  }
+  main .acti_actividades2 {
+    margin: 2em 10em;
+  }
+  main .acti_actividades2 .acti_conjunto2 .acti_ilust2, main .acti_actividades2 .acti_conjunto2 .acti_ilust4 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .btn_up2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .btn_up2 .material-icons {
+    pointer-events: none;
+  }
+  main .acti_actividades {
+    margin: 2em 3em;
+  }
+  main .acti_actividades2 {
+    margin: 2em 3em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .acti_imagenes {
+    pointer-events: none;
+  }
+  main .acti_imagenes .acti_leyenda, main .acti_imagenes .acti_leyenda2 {
+    display: none;
+  }
+  main .acti_imagenes .acti_leyenda3 {
+    display: block;
+    margin: 2em 3em;
+  }
+  main .tickets_especific {
+    font-size: 8px;
+  }
+}
+
+main .tickets_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5em 15em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .tickets_info .tickets_txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .tickets_info .tickets_txt .titulo_tickets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .tickets_info .tickets_txt .titulo_tickets .titulo {
+  position: relative;
+}
+
+main .tickets_info .tickets_txt .titulo_tickets .titulo h1 {
+  background-color: #ffffff;
+}
+
+main .tickets_info .tickets_txt .titulo_tickets .titulo .titulo_giro {
+  position: absolute;
+  width: 35%;
+  top: -20px;
+  left: 218px;
+  mix-blend-mode: multiply;
+  -webkit-animation: rotation 7s infinite linear;
+          animation: rotation 7s infinite linear;
+}
+
+main .tickets_info .tickets_txt .tickets_text {
+  padding: 2em 0;
+}
+
+main .tickets_info .tickets_imgInfo {
+  width: 20vw;
+  margin: 0 0 0 7em;
+}
+
+main .barra_lateral2 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5em 0;
+}
+
+main .barra_lateral2 .barra_txt {
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .7em 4em;
+  background-color: #ffffff;
+  width: auto;
+  border: 3.5px solid #000000;
+  border-radius: 37px;
+  color: #000000;
+  z-index: 12;
+  left: 12em;
+}
+
+main .barra_lateral2 .barra_line {
+  position: absolute;
+  border-top: 3.5px solid #000000;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  main .barra_lateral2 .barra_txt {
+    left: 3em;
+  }
+}
+
+main .tickets_abonos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 7em;
+}
+
+main .tickets_abonos .tickets_abono {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2em;
+  width: auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border: 3.5px solid #000000;
+  border-radius: 35px;
+}
+
+main .tickets_abonos .tickets_abono .abono_titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+  padding: 1em 3em 0 3em;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+main .tickets_abonos .tickets_abono .abono_barra {
+  border-top: 3px solid #000000;
+  margin: 1em 0;
+  width: 100%;
+}
+
+main .tickets_abonos .tickets_abono .abono_txt {
+  margin: 2em;
+}
+
+main .tickets_abonos .tickets_abono .tickets_btn1 {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  margin: .5em auto 2em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .3em 1em;
+  background-color: #fbb03b;
+  width: 10em;
+  border: 3px solid #000000;
+  border-radius: 37px;
+  color: #000000;
+}
+
+main .tickets_abonos .tickets_abono .tickets_btn1 .intro_btnTxt {
+  padding: 0 .5em 0 0;
+}
+
+main .tickets_abonos .tickets_abono .tickets_btn1:hover {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .3em 1em;
+  background-color: #000000;
+  width: 10em;
+  border: 3px solid #000000;
+  border-radius: 37px;
+  color: #ffffff;
+}
+
+main .tickets_abonos .tickets_abono .tickets_btn1:hover .intro_btnTxt {
+  padding: 0 .5em 0 0;
+}
+
+@media screen and (max-width: 900px) {
+  main .tickets_abonos .tickets_abono .tickets_btn1:hover {
+    width: 10em;
+    background-color: #fbb03b;
+    color: #000000;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .tickets_abonos .tickets_abono .tickets_btn1 {
+    position: absolute;
+    top: 34vh;
+    left: 17em;
+    width: auto;
+  }
+  main .tickets_abonos .tickets_abono .tickets_btn1:hover {
+    width: auto;
+  }
+  main .tickets_abonos .tickets_abono .intro_btnTxt {
+    display: none;
+  }
+  main .tickets_abonos .tickets_abono .intro_btnTxt .material-icons {
+    padding: auto;
+    width: auto;
+  }
+}
+
+main .tickets_abonos .tickets_abono .tickets_btn2 {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  margin: .5em auto 2em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .3em 1em;
+  background-color: #ff7bac;
+  width: 10em;
+  border: 3px solid #000000;
+  border-radius: 37px;
+  color: #000000;
+}
+
+main .tickets_abonos .tickets_abono .tickets_btn2 .intro_btnTxt {
+  padding: 0 .5em 0 0;
+}
+
+main .tickets_abonos .tickets_abono .tickets_btn2:hover {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .3em 1em;
+  background-color: #000000;
+  width: 10em;
+  border: 3px solid #000000;
+  border-radius: 37px;
+  color: #ffffff;
+}
+
+main .tickets_abonos .tickets_abono .tickets_btn2:hover .intro_btnTxt {
+  padding: 0 .5em 0 0;
+}
+
+@media screen and (max-width: 900px) {
+  main .tickets_abonos .tickets_abono .tickets_btn2:hover {
+    width: 10em;
+    background-color: #ff7bac;
+    color: #000000;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .tickets_abonos .tickets_abono .tickets_btn2 {
+    position: absolute;
+    top: 34vh;
+    left: 17em;
+    width: auto;
+  }
+  main .tickets_abonos .tickets_abono .tickets_btn2:hover {
+    width: auto;
+  }
+  main .tickets_abonos .tickets_abono .intro_btnTxt {
+    display: none;
+  }
+  main .tickets_abonos .tickets_abono .intro_btnTxt .material-icons {
+    padding: auto;
+    width: auto;
+  }
+}
+
+main .tickets_abonos .tickets_abono .tickets_btn3 {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  margin: .5em auto 2em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .3em 1em;
+  background-color: #ffec3f;
+  width: 10em;
+  border: 3px solid #000000;
+  border-radius: 37px;
+  color: #000000;
+}
+
+main .tickets_abonos .tickets_abono .tickets_btn3 .intro_btnTxt {
+  padding: 0 .5em 0 0;
+}
+
+main .tickets_abonos .tickets_abono .tickets_btn3:hover {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .3em 1em;
+  background-color: #000000;
+  width: 10em;
+  border: 3px solid #000000;
+  border-radius: 37px;
+  color: #ffffff;
+}
+
+main .tickets_abonos .tickets_abono .tickets_btn3:hover .intro_btnTxt {
+  padding: 0 .5em 0 0;
+}
+
+@media screen and (max-width: 900px) {
+  main .tickets_abonos .tickets_abono .tickets_btn3:hover {
+    width: 10em;
+    background-color: #ffec3f;
+    color: #000000;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .tickets_abonos .tickets_abono .tickets_btn3 {
+    position: absolute;
+    top: 34vh;
+    left: 17em;
+    width: auto;
+  }
+  main .tickets_abonos .tickets_abono .tickets_btn3:hover {
+    width: auto;
+  }
+  main .tickets_abonos .tickets_abono .intro_btnTxt {
+    display: none;
+  }
+  main .tickets_abonos .tickets_abono .intro_btnTxt .material-icons {
+    padding: auto;
+    width: auto;
+  }
+}
+
+main .tickets_especific {
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  color: #555555;
+  font-size: 12px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em 0 4em 0;
+  margin: 0 2em;
+}
+
+main .form_cabecera {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  color: #000000;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+main .tickets_formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4em 0;
+}
+
+main .tickets_formulario .tickets_form {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50vw;
+  height: auto;
+  padding: 1.5em;
+  background-color: #000000;
+  border: 5px solid #000000;
+  border-radius: 37px;
+}
+
+main .tickets_formulario .tickets_form .form_caja {
+  padding: 1.5em 2em;
+  background-color: #ffffff;
+  border-radius: 37px;
+}
+
+main .tickets_formulario .tickets_form .form_caja .form_line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+main .tickets_formulario .tickets_form .form_caja .form_line .form_txt {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+main .tickets_formulario .tickets_form .form_caja .form_line .form_txt2 {
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  color: #555555;
+  font-size: 12px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+main .tickets_formulario .tickets_form .form_caja .form_line #nombre {
+  width: 100%;
+  padding: .5em 1em;
+  margin: 1.5em 0 0em 3em;
+  width: 100%;
+  border: none;
+  border-radius: 35px;
+  background-color: #ffc4da;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #000000;
+}
+
+@media screen and (max-width: 600px) {
+  main .tickets_formulario .tickets_form .form_caja .form_line #nombre {
+    margin: .5em 0;
+  }
+}
+
+main .tickets_formulario .tickets_form .form_caja .form_line #nombre:focus {
+  outline: 0 none;
+}
+
+main .tickets_formulario .tickets_form .form_caja .form_line #e-mail {
+  width: 100%;
+  padding: .5em 1em;
+  margin: 1.5em 0 0em 3em;
+  width: 100%;
+  border: none;
+  border-radius: 35px;
+  background-color: #ffc4da;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #000000;
+}
+
+@media screen and (max-width: 600px) {
+  main .tickets_formulario .tickets_form .form_caja .form_line #e-mail {
+    margin: .5em 0;
+  }
+}
+
+main .tickets_formulario .tickets_form .form_caja .form_line #e-mail:focus {
+  outline: 0 none;
+}
+
+main .tickets_formulario .tickets_form .form_caja .form_line #compra {
+  width: 100%;
+  padding: .5em 1em;
+  margin: 1.5em 0 0em 3em;
+  width: 100%;
+  border: none;
+  border-radius: 35px;
+  background-color: #ffc4da;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #000000;
+}
+
+@media screen and (max-width: 600px) {
+  main .tickets_formulario .tickets_form .form_caja .form_line #compra {
+    margin: .5em 0;
+  }
+}
+
+main .tickets_formulario .tickets_form .form_caja .form_line #compra:focus {
+  outline: 0 none;
+}
+
+main .tickets_formulario .tickets_form .form_caja .form_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+main .tickets_formulario .tickets_form .form_caja .form_btn button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em 0 0 0;
+  background-color: #ff7bac;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1.5em;
+  height: 1.5em;
+  border: 3px solid #000000;
+  border-radius: 100%;
+}
+
+main .tickets_formulario .tickets_form .form_caja .form_btn button .material-icons {
+  border-radius: 100%;
+  color: #000000;
+}
+
+main .tickets_formulario .tickets_form .form_caja .form_btn button .material-icons:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+main .tickets_formulario .tickets_form .form_caja .form_btn button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+main .btn_up4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  padding: 0 2em;
+}
+
+main .btn_up4 .material-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .7em;
+  background-color: #fbb03b;
+  width: 1.5em;
+  height: 1.5em;
+  border: 3px solid #000000;
+  border-radius: 100%;
+  color: #000000;
+}
+
+main .btn_up4 .material-icons:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1250px) {
+  main .tickets_abonos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .tickets_info {
+    margin: 5em 5em;
+  }
+  main .tickets_info .tickets_imgInfo {
+    display: none;
+  }
+  main .tickets_formulario .tickets_imgInfo {
+    display: none;
+  }
+  main .tickets_formulario .tickets_form {
+    width: 80vw;
+  }
+  main .tickets_formulario .tickets_form .form_caja .form_btn .material-icons:hover {
+    background-color: #ff7bac;
+    color: #000000;
+  }
+  main .btn_up4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .btn_up4 .material-icons {
+    pointer-events: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .tickets_formulario .tickets_form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80vw;
+    height: auto;
+    padding: 1.5em;
+  }
+  main .tickets_formulario .tickets_form .form_caja .form_line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .form_cabecera {
+    font-size: 38px;
+  }
+}
+
+main #titulo_mapa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4em 10em 0 10em;
+}
+
+main #titulo_mapa .titulo {
+  position: relative;
+}
+
+main #titulo_mapa .titulo h1 {
+  background-color: #ffffff;
+}
+
+main #titulo_mapa .titulo .titulo_giro {
+  position: absolute;
+  width: 40%;
+  top: -20px;
+  left: 187px;
+  mix-blend-mode: multiply;
+  -webkit-animation: rotation 7s infinite linear;
+          animation: rotation 7s infinite linear;
+}
+
+main .mapa_lugar {
+  margin: 3em 10em 6em 10em;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .mapa_lugar .mapa_mallorca {
+  display: block;
+  border: 5px solid #000000;
+  border-radius: 37px;
+  width: 70vw;
+}
+
+main .mapa_lugar .mapa_mallorca2 {
+  display: none;
+  border: 5px solid #000000;
+  border-radius: 37px;
+  width: 70vw;
+}
+
+main .mapa_lugar:hover .mapa_mallorca {
+  display: none;
+}
+
+main .mapa_lugar:hover .mapa_mallorca2 {
+  display: block;
+}
+
+main .barra_maps {
+  border-top: 3.5px solid #000000;
+  margin: 2em 0 4em 0;
+  width: 100%;
+}
+
+main .mapa_festival {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2em 5em;
+}
+
+main .mapa_festival .mapa_leyenda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  height: 55vh;
+  border: 3.5px solid #000000;
+  border-radius: 35px;
+}
+
+main .mapa_festival .mapa_leyenda .leyenda_titulo {
+  text-align: center;
+  white-space: nowrap;
+  padding: .5em 3em 0 3em;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+main .mapa_festival .mapa_leyenda .barra_leyenda {
+  border-top: 3.5px solid #000000;
+  margin: 1em 0;
+  width: 100%;
+}
+
+main .mapa_festival .mapa_leyenda .leyenda {
+  margin: 0 0 1em 0;
+}
+
+main .mapa_festival .mapa_leyenda .leyenda .leyenda_instalaciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+main .mapa_festival .mapa_leyenda .leyenda .leyenda_instalaciones .leyenda_circulo1, main .mapa_festival .mapa_leyenda .leyenda .leyenda_instalaciones .leyenda_circulo2, main .mapa_festival .mapa_leyenda .leyenda .leyenda_instalaciones .leyenda_circulo3, main .mapa_festival .mapa_leyenda .leyenda .leyenda_instalaciones .leyenda_circulo4, main .mapa_festival .mapa_leyenda .leyenda .leyenda_instalaciones .leyenda_circulo5, main .mapa_festival .mapa_leyenda .leyenda .leyenda_instalaciones .leyenda_circulo6 {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000000;
+  border-radius: 100%;
+  margin: 1em 1em 1em 2em;
+}
+
+main .mapa_festival .mapa_leyenda .leyenda .leyenda_instalaciones .leyenda_circulo1 {
+  background-color: #29abe2;
+}
+
+main .mapa_festival .mapa_leyenda .leyenda .leyenda_instalaciones .leyenda_circulo2 {
+  background-color: #ff7bac;
+}
+
+main .mapa_festival .mapa_leyenda .leyenda .leyenda_instalaciones .leyenda_circulo3 {
+  background-color: #ffec3f;
+}
+
+main .mapa_festival .mapa_leyenda .leyenda .leyenda_instalaciones .leyenda_circulo4 {
+  background-color: #7ac943;
+}
+
+main .mapa_festival .mapa_leyenda .leyenda .leyenda_instalaciones .leyenda_circulo5 {
+  background-color: #fbb03b;
+}
+
+main .mapa_festival .mapa_leyenda .leyenda .leyenda_instalaciones .leyenda_circulo6 {
+  background-color: #c25fff;
+}
+
+main .mapa_festival .mapa_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 5em;
+  border: 5px solid #000000;
+  border-radius: 37px;
+  width: 60vw;
+}
+
+main .barra_lateral2 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5em 0;
+}
+
+main .barra_lateral2 .barra_txt {
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .7em 4em;
+  background-color: #ffffff;
+  width: auto;
+  border: 3.5px solid #000000;
+  border-radius: 37px;
+  color: #000000;
+  z-index: 12;
+  left: 12em;
+}
+
+main .barra_lateral2 .barra_line {
+  position: absolute;
+  border-top: 3.5px solid #000000;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  main .barra_lateral2 .barra_txt {
+    left: 3em;
+  }
+}
+
+main .btn_up3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  padding: 0 2em;
+}
+
+main .btn_up3 .material-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .7em;
+  background-color: #7ac943;
+  width: 1.5em;
+  height: 1.5em;
+  border: 3px solid #000000;
+  border-radius: 100%;
+  color: #000000;
+}
+
+main .btn_up3 .material-icons:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1200px) {
+  main .mapa_festival {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .mapa_festival .mapa_leyenda {
+    margin: 0 0 3em 0;
+    height: auto;
+  }
+  main .mapa_festival .mapa_leyenda .leyenda {
+    margin: 0 auto;
+    padding: 0 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 70px;
+  }
+  main .mapa_festival .mapa_img {
+    margin: 0 1em;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .mapa_festival {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .mapa_festival .mapa_leyenda {
+    margin: 0 0 3em 0;
+    height: auto;
+  }
+  main .mapa_festival .mapa_leyenda .leyenda {
+    margin: 0 auto;
+    padding: 0 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 25px;
+  }
+  main .btn_up3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .mapa_lugar {
+    margin: 3em 0em 7em 0em;
+  }
+  main .btn_up3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .btn_up3 .material-icons {
+    pointer-events: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main .mapa_lugar {
+    margin: 2em 0em 5em 0em;
+  }
+  main .mapa_festival {
+    margin: 1em;
+  }
+  main .mapa_festival .mapa_leyenda .leyenda {
+    font-size: 10px;
+  }
+  main .mapa_festival .mapa_img {
+    margin: 0 1em;
+    width: 100%;
+  }
+}
+
+footer {
+  width: 100%;
+  margin: 2em 0 0 0;
+  padding: 1em 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #c4c4c4;
+}
+
+footer .footer_txt {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0 2em;
+}
+
+footer .footer_img {
+  height: 100%;
+  padding: 1em;
+}
+
+footer .footer_img2 {
+  display: none;
+  height: 100%;
+  padding: 1em;
+}
+
+footer .footer_bar {
+  border-right: 2px solid #000000;
+  height: 3.5em;
+  padding: 0 1em 0 1em;
+}
+
+footer .footer_subs {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0 0 0 3em;
+}
+
+footer .footer_subs .footer_formTxt {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  min-width: 100%;
+}
+
+footer .footer_subs .footer_formTxt2 {
+  display: none;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  min-width: 100%;
+}
+
+footer .footer_subs .footer_form {
+  width: 100%;
+  padding: 0.4em 0 0.1em 0;
+}
+
+footer .footer_subs .footer_form #correo {
+  width: 100%;
+  border: none;
+  background-color: #c4c4c4;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  color: #555555;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+footer .footer_subs .footer_form #correo:focus {
+  outline: none;
+}
+
+footer .footer_subs .footer_form #correo2 {
+  display: none;
+  width: 100%;
+  border: none;
+  background-color: #c4c4c4;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  color: #555555;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+footer .footer_subs .footer_form #correo2:focus {
+  outline: none;
+}
+
+footer .footer_subs .footer_bar2 {
+  border-bottom: 1px solid #555555;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  footer .footer_txt {
+    display: none;
+  }
+  footer .footer_img {
+    display: none;
+    height: 100%;
+    padding: 1em;
+  }
+  footer .footer_img2 {
+    display: block;
+    height: 100%;
+    padding: 1em;
+  }
+  footer .footer_subs .footer_formTxt {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer .footer_bar {
+    display: none;
+  }
+  footer .footer_subs {
+    padding: 0 0 0 1em;
+  }
+  footer .footer_subs .footer_formTxt {
+    display: none;
+  }
+  footer .footer_subs .footer_formTxt2 {
+    display: block;
+  }
+  footer .footer_subs .footer_form #correo {
+    display: none;
+  }
+  footer .footer_subs .footer_form #correo2 {
+    display: block;
+    font-size: 10px;
+  }
+}
+
+@media print {
+  @page {
+    margin: 2cm;
+    size: auto;
+    page-break-inside: avoid;
+  }
+  header, footer, .titulo_giro, .barra_maps, .acti_ilust, .acti_ilust2, .acti_ilust3, .acti_ilust4, .acti_ilust5 {
+    display: none;
+  }
+  main {
+    -webkit-print-color-adjust: exact;
+  }
+  main #titulo_activ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  main .acti_imagenes .acti_leyenda, main .acti_imagenes .acti_leyenda2 {
+    margin: 0;
+  }
+  main .acti_imagenes .acti_leyenda {
+    display: block;
+  }
+  main .acti_imagenes .acti_leyenda2 {
+    display: none;
+  }
+  main .acti_imagenes .acti_leyenda3 {
+    display: none;
+  }
+  main .acti_imagenes:hover .acti_leyenda {
+    display: block;
+  }
+  main .acti_imagenes:hover .acti_leyenda2 {
+    display: none;
+  }
+  main .tickets_especific {
+    font-size: 10px;
+    padding: 1cm 0;
+  }
+  main .acti_actividades {
+    margin: 0 auto 1.5cm auto;
+    width: 100%;
+    display: inline-block;
+  }
+  main .acti_actividades2 {
+    margin: 0 auto 1.5cm auto;
+    width: 100%;
+    display: inline-block;
+  }
+  main .btn_up, main .btn_up2, main .btn_up3, main .btn_up4 {
+    display: none;
+  }
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */

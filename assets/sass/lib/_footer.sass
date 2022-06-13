@@ -1,0 +1,106 @@
+@import 'mixins'
+
+footer
+    width: 100%
+    margin: 2em 0 0 0
+    padding: 1em 5em
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    background-color: $gray
+
+    .footer_txt
+        @include txt_base
+        @include padd_footer
+    
+    .footer_img
+        height: 100%
+        padding: 1em
+    
+    .footer_img2
+        display: none
+        height: 100%
+        padding: 1em
+
+    .footer_bar
+        border-right: 2px solid $negro
+        height: 3.5em
+        padding: 0 1em 0 1em
+        
+    
+    .footer_subs
+        @include txt_base
+        padding: 0 0 0 3em
+
+        .footer_formTxt
+            @include txt_dest
+            min-width: 100%
+        .footer_formTxt2
+            display: none
+            @include txt_dest
+            min-width: 100%
+
+        .footer_form
+            width: 100%
+            padding: 0.4em 0 0.1em 0
+            
+            #correo
+                width: 100%
+                border: none
+                background-color: $gray
+                font-family: 'Poppins', sans-serif
+                @include txt_especific
+            #correo:focus
+                outline: none
+
+            #correo2
+                display: none
+                width: 100%
+                border: none
+                background-color: $gray
+                font-family: 'Poppins', sans-serif
+                @include txt_especific
+            #correo2:focus
+                outline: none
+
+        .footer_bar2
+            border-bottom: 1px solid $darkgray
+            width: 100%
+
+
+// TABLET (900px) Y MOVIL(600px) DEVICES
+
+footer
+    @media screen and (max-width: 900px)
+        .footer_txt
+            display: none
+        .footer_img
+            display: none
+            height: 100%
+            padding: 1em
+    
+        .footer_img2
+            display: block
+            height: 100%
+            padding: 1em
+        .footer_subs
+            .footer_formTxt
+                font-size: 12px
+footer
+    @media screen and (max-width: 600px)
+        .footer_bar
+            display: none
+        .footer_subs
+            padding: 0 0 0 1em
+            .footer_formTxt
+                display: none
+            .footer_formTxt2
+                display: block
+            .footer_form
+                #correo
+                    display: none
+                #correo2
+                    display: block
+                    font-size: 10px
+            

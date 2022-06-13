@@ -1,0 +1,184 @@
+@import 'mixins'
+
+main
+    #titulo_mapa
+        display: flex
+        flex-direction: column
+        width: 100%
+        justify-content: center
+        align-items: center
+        padding: 4em 10em 0 10em
+        .titulo
+            position: relative
+            
+            h1
+                background-color: $blanco
+            .titulo_giro
+                position: absolute
+                width: 40%
+                top: -20px
+                left: 187px
+                mix-blend-mode: multiply
+                animation: rotation 7s infinite linear
+    
+    .mapa_lugar
+        margin: 3em 10em 6em 10em
+        @include txt_especific2
+        position: relative
+        display: flex
+        justify-content: center
+        
+        .mapa_mallorca
+            display: block
+            border: 5px solid $negro
+            border-radius: 37px
+            width: 70vw
+        .mapa_mallorca2
+            display: none
+            border: 5px solid $negro
+            border-radius: 37px
+            width: 70vw
+        
+    .mapa_lugar:hover
+        .mapa_mallorca
+            display: none
+        .mapa_mallorca2
+            display: block 
+        
+    .barra_maps     
+        border-top: 3.5px solid $negro
+        margin: 2em 0 4em 0
+        width: 100%
+
+    .mapa_festival
+        display: flex
+        flex-direction: row
+        justify-content: center
+        margin: 2em 5em
+        
+        
+        .mapa_leyenda
+            display: flex
+            flex-direction: column
+            justify-content: center
+            width: auto
+            height: 55vh
+            border: 3.5px solid $negro
+            border-radius: 35px 
+                
+            .leyenda_titulo
+                text-align: center
+                white-space: nowrap
+                padding: .5em 3em 0 3em
+                @include txt_dest
+            .barra_leyenda
+                border-top: 3.5px solid $negro
+                margin: 1em 0
+                width: 100%
+            .leyenda
+                margin: 0 0 1em 0
+                .leyenda_instalaciones
+                    display: flex
+                    align-items: center
+                    white-space: nowrap
+                    @include txt_base
+                        
+                    .leyenda_circulo1, .leyenda_circulo2, .leyenda_circulo3, .leyenda_circulo4, .leyenda_circulo5, .leyenda_circulo6
+                        width: 20px
+                        height: 20px
+                        border: 2px solid $negro
+                        border-radius: 100%
+                        margin: 1em 1em 1em 2em
+                    .leyenda_circulo1
+                        background-color: $azul
+                    .leyenda_circulo2
+                        background-color: $rosa
+                    .leyenda_circulo3
+                        background-color: $amarillo
+                    .leyenda_circulo4
+                        background-color: $verde
+                    .leyenda_circulo5
+                        background-color: $naranja
+                    .leyenda_circulo6
+                        background-color: $morado
+            
+        .mapa_img
+            display: flex
+            justify-content: center
+            margin: 0 5em
+            border: 5px solid $negro
+            border-radius: 37px
+            width: 60vw
+    
+    @include entradilla_tickets
+
+    @include boton_goUp3
+
+
+
+// TABLET (900px) Y MOVIL(600px) DEVICES    
+
+main
+    @media screen and (max-width: 1200px)
+        .mapa_festival
+            flex-direction: column
+            align-items: center
+            .mapa_leyenda
+                margin: 0 0 3em 0
+                height: auto
+                .leyenda
+                    margin: 0 auto
+                    padding: 0 2em
+                    display: flex
+                    flex-direction: row
+                    justify-content: center
+                    flex-wrap: wrap
+                    font-size: 70px
+            .mapa_img
+                margin: 0 1em
+                width: 100% 
+
+    @media screen and (max-width: 1000px)
+        .mapa_festival
+            flex-direction: column
+            align-items: center
+            .mapa_leyenda
+                margin: 0 0 3em 0
+                height: auto
+                .leyenda
+                    margin: 0 auto
+                    padding: 0 2em
+                    display: flex
+                    flex-direction: row
+                    justify-content: center
+                    flex-wrap: wrap
+                    font-size: 25px
+              
+        .btn_up3
+            display: flex
+            justify-content: center
+    
+    @media screen and (max-width: 900px)
+        .mapa_lugar
+            margin: 3em 0em 7em 0em
+
+        .btn_up3
+            display: flex
+            justify-content: center
+            .material-icons
+                pointer-events: none 
+            
+                
+main
+    @media screen and (max-width: 700px)
+        .mapa_lugar
+            margin: 2em 0em 5em 0em
+            
+        .mapa_festival
+            margin: 1em
+            .mapa_leyenda
+                .leyenda
+                    font-size: 10px
+            .mapa_img
+                margin: 0 1em
+                width: 100%

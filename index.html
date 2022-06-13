@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CATARSIX</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/Ojo_morado_amarillo.svg">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span id="scroll-top"></span>
+        
+        <nav class="menu">
+            <div class="brand">
+                <a href="index.html">
+                    <img src="assets/images/logo_blanco_horizontal.png" alt="home">
+                </a>
+            </div>
+
+            <label class="label_menu" for="btn_menu"><div class="mdi mdi-menu"></div></label>
+            <input type="checkbox" name="menu_menu" id="btn_menu">
+
+            <ul>
+                <li class="menuitem"><a href="assets/pages/actividades.html">actividades</a></li>
+                <li class="menuitem"><a href="assets/pages/mapa.html">mapa</a></li>
+                <li class="menuitem"><a href="assets/pages/tickets.html">tickets</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="intro">
+            <div class="intro_info">
+                <div class="intro_title">
+                    <img src="assets/images/logo_color_cuadrado.png" alt="Catarsix">
+                </div>
+                <div class="intro_subtitle">15-17<br>Julio 2022</div>
+                <div class="intro_txt">
+                    CatarSix es un festival de música como ningún otro. 
+                    Tiene el objetivo de hacer experimentar al público la música como
+                    nunca antes la ha hecho, utilizando para ello recursos que involucren 
+                    a los 5 sentidos.
+                </div>
+                <a href="assets/pages/tickets.html">
+                    <div class="intro_btn">
+                        <div class="intro_btnTxt">tickets</div>
+                        <span class="material-icons">east</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="intro_img">
+                <img src="assets/images/cara_sonriente.png" alt="Ilustracion cara sonriente">
+            </div>
+        </article>
+
+
+        <div class="barra_lateral">
+            <div class="barra_txt">
+                “La experiencia multisensorial definitiva”
+            </div>
+            <div class="barra_line"></div>
+        </div>
+
+
+        <article id="cartelera">
+            <div class="cartelera"></div>
+
+            <div class="cartelera_txt">*No te olvides de escuchar nuestra playlist para prepararte para la experiencia:&nbsp;
+                <a href="https://open.spotify.com/playlist/0VRPOMBD6oV5DJO5qoSx8j?si=607a0c4d1d2b49cf" target="_blank">¡vamos a spotify!</a>
+            </div>
+
+            <div class="btn_up"> 
+                <a href="#scroll-top">
+                    <span class="material-icons">arrow_upward</span>
+                </a>
+            </div>
+        </article>
+        
+    </main>
+
+    <footer>
+        <div class="footer_txt">Patrocinadores:</div>
+        <img class="footer_img" src="assets/images/patrocinadores.png" alt="patrocinadores">
+        <img class="footer_img2" src="assets/images/patrocinadores2.png" alt="patrocinadores">
+        <div class="footer_bar"></div>
+        <div class="footer_subs">
+            <div class="footer_formTxt">¡Subscribete para recibir más noticias!</div>
+            <div class="footer_formTxt2">¡Subscribete!</div>
+            <form class="footer_form">
+                <input type="text" id="correo" name="correo_desktop" placeholder="Escribe tu correo electrónico">
+                <input type="text" id="correo2" name="correo_desktop" placeholder="Correo electrónico">
+            </form>
+            <div class="footer_bar2"></div>
+        </div>
+
+    </footer>
+</body>
+</html>

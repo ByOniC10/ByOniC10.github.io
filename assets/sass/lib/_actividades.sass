@@ -1,0 +1,162 @@
+@import 'mixins'
+
+main
+    #titulo_activ
+        display: flex
+        flex-direction: column
+        width: 100%
+        justify-content: center
+        align-items: center
+        padding: 4em 10em 0 10em
+        .titulo
+            position: relative
+            h1
+                background-color: $blanco
+            .titulo_giro
+                position: absolute
+                width: 20%
+                top: -20px
+                left: 400px
+                mix-blend-mode: multiply
+                animation: rotation 7s infinite linear
+    
+    .acti_imagenes
+        .acti_leyenda, .acti_leyenda2
+            margin: 2em 15em
+        .acti_leyenda
+            display: block
+        .acti_leyenda2
+            display: none
+        .acti_leyenda3
+            display: none
+    .acti_imagenes:hover
+        .acti_leyenda
+            display: none
+        .acti_leyenda2
+            display: block
+
+    .acti_actividades
+        margin: 2em 15em
+        .acti_conjunto
+            display: flex
+            flex-direction: row
+            .acti_actividad
+                display: flex
+                flex-direction: row
+                align-items: center
+                border: 3.5px solid $negro
+                margin: 0 5em 0 0
+                border-radius: 0 35px 35px 0
+                
+                @include circulos_actividades
+
+            .acti_ilust
+                width: 20vw
+                padding: 3em 4em
+                border: 3.5px solid $negro
+                border-radius: 35px
+                background-color: $amarillo
+                
+            .acti_ilust3
+                width: 20vw
+                padding: 3em 4em
+                border: 3.5px solid $negro
+                border-radius: 35px
+                background-color: $verde
+
+            .acti_ilust5
+                width: 20vw
+                padding: 3em 4em
+                border: 3.5px solid $negro
+                border-radius: 35px
+                background-color: $rosa
+        
+    .acti_actividades2
+        margin: 2em 15em
+        .acti_conjunto2
+            display: flex
+            flex-direction: row
+            justify-content: center
+            .acti_actividad2
+                display: flex
+                flex-direction: row
+                justify-content: right
+                align-items: center
+                border: 3.5px solid $negro
+                margin: 0 0 0 5em
+                border-radius: 35px 0 0 35px
+                z-index: 1
+
+                @include circulos_actividades
+
+            .acti_ilust2
+                width: 20vw
+                padding: 3em 4em
+                border: 3.5px solid $negro
+                border-radius: 35px
+                background-color: $naranja
+            
+            .acti_ilust4
+                width: 20vw
+                height: 40vh
+                padding: 3em 4em
+                border: 3.5px solid $negro
+                border-radius: 35px
+                background-color: $azul
+
+    @include boton_goUp2
+
+
+
+// TABLET (900px) Y MOVIL(600px) DEVICES
+
+main
+    @media screen and (max-width: 1200px)
+        .acti_imagenes
+            .acti_leyenda, .acti_leyenda2
+                margin: 2em 2em
+    @media screen and (max-width: 1300px)
+        .acti_imagenes
+            pointer-events: none
+            .acti_leyenda, .acti_leyenda2
+                margin: 2em 2em
+        .tickets_especific
+            margin: 0 3em
+        
+        .acti_actividades
+            margin: 2em 10em
+            .acti_conjunto
+                .acti_ilust, .acti_ilust3, .acti_ilust5
+                    display: none
+        
+        .acti_actividades2
+            margin: 2em 10em
+            .acti_conjunto2
+                .acti_ilust2, .acti_ilust4
+                    display: none
+
+    @media screen and (max-width: 900px)  
+        .btn_up2
+            display: flex
+            justify-content: center
+            .material-icons
+                pointer-events: none  
+        .acti_actividades
+            margin: 2em 3em
+        
+        .acti_actividades2
+            margin: 2em 3em        
+                
+
+main
+    @media screen and (max-width: 600px)
+        .acti_imagenes
+            pointer-events: none
+            .acti_leyenda, .acti_leyenda2
+                display: none
+            .acti_leyenda3
+                display: block
+                margin: 2em 3em
+
+        .tickets_especific
+             font-size: 8px

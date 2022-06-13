@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CATARSIX</title>
+    <link rel="icon" type="image/x-icon" href="../images/Ojo_morado_amarillo.svg">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span id="scroll-top"></span>
+        
+        <nav class="menu4">
+            <div class="brand">
+                <a href="../../index.html">
+                    <img src="../images/logo_blanco_horizontal.png" alt="home">
+                </a>
+            </div>
+
+            <label class="label_menu" for="btn_menu"><div class="mdi mdi-menu"></div></label>
+            <input type="checkbox" name="menu_menu" id="btn_menu">
+
+            <ul>
+                <li class="menuitem"><a href="../pages/actividades.html">actividades</a></li>
+                <li class="menuitem"><a href="../pages/mapa.html">mapa</a></li>
+                <li class="menuitem"><a href="../pages/tickets.html">tickets</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="tickets_info">
+            <div class="tickets_txt">
+                <div class="titulo_tickets">
+                    <div class="titulo">
+                        <h1>tickets</h1>
+                        <img class="titulo_giro" src="../images/Circulo_Abonos.svg" alt="compra ya tu abono">
+                    </div>
+                </div>
+                <h2 class="tickets_subtitle">Compra tus entradas ahora!</h2>
+                <p class="tickets_text">En CatarSix disponemos de diversas opciones de abono para que cada ususario disfrute 
+                    de la experiencia a su medida. <br>
+                    Tanto si deseas vivir un día de experiencia, como si quieres dos o tres, pulsa comprar y selecciona entre los planes que Catarsix ha preparado para tí. </p>
+            </div>
+
+            <img class="tickets_imgInfo" src="../images/Dedo_señalando.svg" alt="Ilustracion dedo">
+        </article>
+        
+        <div class="barra_lateral2">
+            <div class="barra_txt">
+                ¡opciones de abono!
+            </div>
+            <div class="barra_line"></div>
+        </div>
+
+        <div class="tickets_abonos">
+            <article class="tickets_abono">
+                <p class="abono_titulo">ABONO 1 DIA</p>
+                <div class="abono_barra"></div>
+                <p class="abono_txt">El abono de 1 día recoge la posibilidad de disfrutar de todas las instalaciones definidas en el boletín de actividades de un único dia seleccionado.</p>
+                <a href="#scroll-form">
+                    <div class="tickets_btn1">
+                        <div class="intro_btnTxt">comprar</div>
+                        <span class="material-icons">east</span>
+                    </div>
+                </a> 
+            </article>
+
+            <article class="tickets_abono">
+                <p class="abono_titulo">ABONO 2 DIAS</p>
+                <div class="abono_barra"></div>
+                <p class="abono_txt">El abono de 2 días recoge la posibilidad de disfrutar de todas las instalaciones definidas en el boletín de actividades de un único dia seleccionado.</p>
+                <a href="#scroll-form">
+                    <div class="tickets_btn2">
+                        <div class="intro_btnTxt">comprar</div>
+                        <span class="material-icons">east</span>
+                    </div>
+                </a>
+            </article>
+
+            <article class="tickets_abono">
+                <p class="abono_titulo">ABONO 3 DIAS</p>
+                <div class="abono_barra"></div>
+                <p class="abono_txt">El abono de 3 días recoge la posibilidad de disfrutar de todas las instalaciones definidas en el boletín de actividades de un único dia seleccionado.</p>
+                <a href="#scroll-form">
+                    <div class="tickets_btn3">
+                        <div class="intro_btnTxt">comprar</div>
+                        <span class="material-icons">east</span>
+                    </div>
+                </a>
+            </article>
+        </div>
+        <p class="tickets_especific">*Días disponibles de viernes a domingo del 15 al 17 de julio; para más información sobre las actividades y actuaciones disponibles cada día consultar la cartelera y el boletín de actividades.</p>
+
+        <div class="barra_maps"></div>
+
+        <h2 class="form_cabecera">Compra de entradas</h2>
+
+        <article class="tickets_formulario">
+            <img class="tickets_imgInfo" src="../images/entrada.svg" alt="Ilustracion entrada">
+            
+            <form class="tickets_form">
+                <fieldset class="form_caja">
+                    <div class="form_line">
+                        <p class="form_txt">Nombre del solicitante</p>
+                        <input type="text" id="nombre" name="tickets_nombre" placeholder="">
+                    </div>
+                    
+                    <div class="form_line">
+                        <p class="form_txt">Correo electrónico</p>
+                        <input type="text" id="e-mail" name="tickets_correo" placeholder="">
+                    </div>
+
+                    <div class="form_line">
+                        <div>
+                            <p class="form_txt">Opción de compra</p>
+                            <p class="form_txt2">(días de asistencia)</p>
+                        </div>
+                        <input type="text" id="compra" name="tickets_compra" placeholder="">
+                    </div>
+                    <div class="form_btn">
+                        <button type="reset" class="material-icons">east</button>
+                    </div>
+                </fieldset>
+            </form>
+        </article>
+
+        <span id="scroll-form"></span>
+
+        <div class="btn_up4"> 
+            <a href="#scroll-top">
+                <span class="material-icons">arrow_upward</span>
+            </a>
+        </div>
+        
+
+    </main>
+
+    <footer>
+        <div class="footer_txt">Patrocinadores:</div>
+        <img class="footer_img" src="../images/patrocinadores.png" alt="patrocinadores">
+        <img class="footer_img2" src="../images/patrocinadores2.png" alt="patrocinadores">
+        <div class="footer_bar"></div>
+        <div class="footer_subs">
+            <div class="footer_formTxt">¡Subscribete para recibir más noticias!</div>
+            <div class="footer_formTxt2">¡Subscribete!</div>
+            <form class="footer_form">
+                <input type="text" id="correo" name="correo_desktop" placeholder="Escribe tu correo electrónico">
+                <input type="text" id="correo2" name="correo_desktop" placeholder="Correo electrónico">
+            </form>
+            <div class="footer_bar2"></div>
+        </div>
+
+    </footer>
+</body>
+</html>
